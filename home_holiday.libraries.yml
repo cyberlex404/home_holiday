@@ -1,0 +1,6 @@
+yamap:
+  version: VERSION
+  js:
+    js/holiday-map.js: {}
+  dependencies:
+      - yamapsapi/yamaps21

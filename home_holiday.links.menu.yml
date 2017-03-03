@@ -1,0 +1,7 @@
+home_holiday.holiday_config:
+  title: 'HolidayConfig'
+  route_name: home_holiday.holiday_config
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+

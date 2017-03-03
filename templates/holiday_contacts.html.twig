@@ -1,0 +1,56 @@
+{#
+/**
+ * Available variables:
+ * - tel:
+ * - address:
+ * - email
+ *
+ */
+#}
+
+<div class="contact-items">
+    {% if address %}
+        {% block address %}
+            <div class="contact-item">
+                <div class="item-icon"><i class="fa fa-location-arrow"></i></div>
+                <div class="contact-content">
+                    <span class="contact-label">{{ 'Address'|trans }}:</span>
+                    <span class="c-content"> {{ address }}</span>
+                </div>
+            </div>
+        {% endblock  %}
+    {% endif %}
+    {% if tel %}
+        {% block tel %}
+            <div class="contact-item">
+                <div class="item-icon"><i class="fa fa-phone"></i></div>
+                <div class="contact-content">
+                    <span class="contact-label">{{ 'Phone'|trans }}:</span>
+                    <span class="c-content">{{ tel }}</span>
+                </div>
+            </div>
+        {% endblock  %}
+    {% endif %}
+    {% if email %}
+        {% block email %}
+            <div class="contact-item">
+                <div class="item-icon"><i class="fa fa-envelope-o"></i></div>
+                <div class="contact-content">
+                    <span class="contact-label">{{ 'E-mail'|trans }}:</span>
+                    <span class="c-content">{{ email }}</span>
+                </div>
+            </div>
+        {% endblock  %}
+    {% endif %}
+    {% if skype %}
+        {% block skype %}
+            <div class="contact-item">
+                <div class="item-icon"><i class="fa fa-skype"></i></div>
+                <div class="contact-content">
+                    <span class="contact-label">{{ 'Skype'|trans }}:</span>
+                    <span class="c-content" >{{ skype }}</span>
+                </div>
+            </div>
+         {% endblock  %}
+    {% endif %}
+</div>

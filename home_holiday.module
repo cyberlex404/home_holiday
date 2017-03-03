@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Contains home_holiday.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function home_holiday_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the home_holiday module.
+    case 'help.page.home_holiday':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Home holiday') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function home_holiday_theme() {
+  return [
+    'home_holiday' => [
+      'template' => 'home_holiday',
+      'render element' => 'children',
+    ],
+    'holiday_contacts' => [
+      'template' => 'holiday_contacts',
+      'variables' => [
+        'tel' => NULL,
+        'address' => NULL,
+        'email' => NULL,
+        'skype' => NULL,
+      ],
+    ],
+    'holiday_social' => [
+      'template' => 'holiday_social',
+      'variables' => [
+        'vk' => NULL,
+        'facebook' => NULL,
+        'instagram' => NULL,
+      ],
+    ],
+  ];
+}
