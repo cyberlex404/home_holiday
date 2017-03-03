@@ -4,3 +4,4 @@ yamap:
     js/holiday-map.js: {}
   dependencies:
       - yamapsapi/yamaps21
+      - core/jquery.once
