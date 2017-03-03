@@ -1,14 +1,14 @@
 {
-  "name": "drupal/home_holiday",
+  "name": "cyberlex404/home_holiday",
   "type": "drupal-module",
   "description": "Home holiday",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/home_holiday",
+  "homepage": "https://github.com/cyberlex404/home_holiday",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://www.drupal.org/project/issues/home_holiday",
-    "source": "http://cgit.drupalcode.org/home_holiday"
+    "issues": "https://github.com/cyberlex404/home_holiday/issues",
+    "source": "https://github.com/cyberlex404/home_holiday"
   },
   "require": { }
 }
